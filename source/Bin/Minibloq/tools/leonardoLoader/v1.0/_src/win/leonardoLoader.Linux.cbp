@@ -7,8 +7,8 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Release">
-				<Option output="bin/release/leonardoLoader" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/release/" />
+				<Option output="bin/release/leonardoLoader-Linux" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/release-i386/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -19,8 +19,8 @@
 					<Add directory="source/libctb-0.16/include" />
 				</Compiler>
 				<Linker>
-					<Add option="-s" />
 <!--
+					<Add option="-s" />
 					<Add option="-lkernel32" />
 					<Add option="-luser32" />
 					<Add option="-lgdi32" />
@@ -32,8 +32,8 @@
 				</Linker>
 			</Target>
 			<Target title="Debug">
-				<Option output="bin/debug/leonardoLoader" prefix_auto="1" extension_auto="1" />
-				<Option object_output="obj/debug/" />
+				<Option output="bin/release/leonardoLoader-Linux-dbg" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/debug-i386/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
