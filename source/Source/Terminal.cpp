@@ -263,7 +263,7 @@ wxThread::ExitCode TerminalRXThread::Entry()
 
 #if defined(linux)
             wxCommandEvent e(wxEVT_COMMAND_TERMINAL_UPDATE);
-            e.SetString(wxConvLocal.cMB2WC(buffer));
+            e.SetString(strOutput);
             wxQueueEvent(m_pHandler, e.Clone());
 #else
         //Editor belonging to split editor terminals:
